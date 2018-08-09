@@ -1,3 +1,6 @@
+//change the location browser from https to http;
+
+
 <script>
 if (location.protocol != 'http:')
 {
