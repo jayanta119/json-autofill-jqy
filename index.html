@@ -33,7 +33,7 @@
     
  alert("The paragraph was clicked.");
  
-var hi = $('#employeeSelect').val();
+var hi = $('#tags').val();
  
   alert(hi);
   
@@ -41,7 +41,7 @@ var hi = $('#employeeSelect').val();
  
   var entry = data.feed.entry;
   var name = hi;
-  
+  $('#employeeDetails').html("sign up for a new id </br>data not found</br>" );
   $('.block_newposts_2').html("" );
   $(entry).each(function(){
   
@@ -58,8 +58,7 @@ var hi = $('#employeeSelect').val();
 	
     
 	}
-    else {$('#employeeDetails').html("sign up for a new id </br>data not found</br>" );
-    }
+    
   });
   
  });
@@ -68,10 +67,7 @@ var hi = $('#employeeSelect').val();
 </script>
 
 
-  <div class="ui-widget">
-  <label for="tags">Tags: </label>
-  <input id="tags">
-</div>
+  
  
 
 <div type="text" class="btn btn-employeeSelectinfo" value="eeeep" style="margin-top:10px" id="emp";>hii</div>
@@ -79,7 +75,7 @@ var hi = $('#employeeSelect').val();
 
 
 
-  <input type="text" class="btn btn-employeeSelectinfo" value="View details" style="margin-top:10px" id="employeeSelect";/>
+  <input type="text" class="btn btn-employeeSelectinfo" value="" style="margin-top:10px" id="tags";/>
   
   
 <div id="employeeDetails" ></div>
